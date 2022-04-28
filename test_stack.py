@@ -34,3 +34,8 @@ flux_cat.add_column(name_gal, name='Name', index=1)
 
 print('done...')
 
+print('writing the ecsv catalogue ...')
+
+flux_cat.write('cat_flux_elines.table.ecsv', overwrite=True)
+
+print('done!')
